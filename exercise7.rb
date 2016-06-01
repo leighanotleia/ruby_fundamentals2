@@ -23,3 +23,11 @@ end
 students.delete (:cohort2)
 
 list_students(students)
+
+# BONUS (not done)
+
+
+students.each_value do |value|
+  total_students =
+  puts value.sum
+end
