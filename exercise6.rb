@@ -1,6 +1,6 @@
 grocery_list = ["cookies", "cereal", "watermelon", "pop-tarts"]
 
-grocery_list << "rice"
+grocery_list << "rice" #1
 
 def list(grocery_list)
     grocery_list.map do |food|
@@ -8,13 +8,9 @@ def list(grocery_list)
   end
 end
 
-puts grocery_list.count
+list(grocery_list)
 
-puts list(grocery_list)
+puts grocery_list.count #2
 
 
-#2 puts grocery_list.count
-
-#4 puts grocery_list = [1]
-
-#5 grocery_list.sort
+puts grocery_list[1] #4
