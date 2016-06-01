@@ -1,4 +1,4 @@
-grocery_list = ["cookies", "cereal", "watermelon", "pop-tarts"]
+grocery_list = ["cookies", "cereal", "watermelon", "pop-tarts", "salmon"]
 
 grocery_list << "rice" #1
 
@@ -10,7 +10,7 @@ end
 
 list(grocery_list)
 
-puts grocery_list.count #2
+puts grocery_list.count
 
 if grocery_list == ["bananas"]
    puts "You need to pick up bananas today"
@@ -18,6 +18,12 @@ if grocery_list == ["bananas"]
       puts "You don't need to pick up bananas"
 end
 
+puts grocery_list[1]
 
+list(grocery_list.sort)
 
-puts grocery_list[1] #4
+puts "-----------------------"
+
+grocery_list.delete_at(4)
+
+list(grocery_list)
