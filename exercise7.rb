@@ -11,3 +11,12 @@ end
 end
 
 list_students(students)
+
+students [:cohort4] = 43
+
+puts students.keys
+
+students.each do |same_cohort, new_amount|
+
+puts "#{same_cohort} #{new_amount + (new_amount * 0.05).to_i} students"
+end
